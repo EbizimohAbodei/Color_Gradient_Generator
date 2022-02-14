@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Merienda&family=Mochiy+Pop+P+One&family=Pacifico&family=Tangerine&family=Vujahday+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Gradient Colour Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main__container">
+      <h1>Generate CSS Colour Gradient</h1>
+      <h3>Choose Colors</h3>
+      <form class="form">
+        <div class="colors__container">
+          <input
+            type="color"
+            name="colors"
+            value="#462cdb"
+            class="first__color"
+          />
+          <input
+            type="color"
+            name="colors"
+            value="#19e284"
+            class="second__color"
+          />
+        </div>
+        <h3>Choose the Direction</h3>
+        <div class="topRadioButtons">
+          <label for="rightBottom">
+            <input
+              type="radio"
+              name="direction"
+              value="to right bottom"
+              id="rightBottom"
+            />
+            <img
+              src="/3_week/2_task/Color_Gradient_Generator/images/toRightBottom.png"
+              alt=""
+            />
+          </label>
+          <label for="bottom">
+            <input
+              type="radio"
+              value="to Bottom"
+              name="direction"
+              id="bottom"
+              checked
+            />
+            <img
+              src="/3_week/2_task/Color_Gradient_Generator/images/toBottom.png"
+              alt=""
+            />
+          </label>
+          <label for="leftBottom">
+            <input
+              type="radio"
+              name="direction"
+              value="to left bottom"
+              id="leftBottom"
+            />
+            <img
+              src="/3_week/2_task/Color_Gradient_Generator/images/toLeftBottom.png"
+              alt=""
+            />
+          </label>
+        </div>
+        <div class="midRadioButtions">
+          <div class="right">
+            <label for="right">
+              <input
+                type="radio"
+                value="to Right"
+                name="direction"
+                id="right"
+              />
+              <img
+                src="/3_week/2_task/Color_Gradient_Generator/images/toRight.png"
+              />
+            </label>
+          </div>
+          <div class="none">
+            <label for="none">
+              <input type="radio" name="none" disabled="true" id="none" />
+              <img
+                src="/3_week/2_task/Color_Gradient_Generator/images/dot-logo.png"
+                id="none"
+              />
+            </label>
+          </div>
+          <div class="left">
+            <label for="left">
+              <input type="radio" value="to Left" name="direction" id="left" />
+              <img
+                src="/3_week/2_task/Color_Gradient_Generator/images/toLeft.png"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="bottomRadioButtons">
+          <label for="rightTop" class="rightTop">
+            <input
+              type="radio"
+              name="direction"
+              value="to right top"
+              id="rightTop"
+            />
+            <img
+              src="/3_week/2_task/Color_Gradient_Generator/images/toRightTop.png"
+              alt=""
+            />
+          </label>
+          <label for="top">
+            <input type="radio" value="to Top" name="direction" id="top" />
+            <img
+              src="/3_week/2_task/Color_Gradient_Generator/images/toTop.png"
+              alt=""
+            />
+          </label>
+          <label for="leftTop">
+            <input
+              type="radio"
+              name="direction"
+              value="to left top"
+              id="leftTop"
+            />
+            <img
+              src="/3_week/2_task/Color_Gradient_Generator/images/toLeftTop.png"
+              alt=""
+            />
+          </label>
+        </div>
+      </form>
+
+      <p class="cssShowCase">
+        CSS CODE: Background-image: linear-gradient(to bottom, #ff0000, #fff700)
+      </p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
